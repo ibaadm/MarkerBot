@@ -1,4 +1,4 @@
-# COMP0002: Robot Arena Simulation
+# MarkerBot
 
 ## Program Description
 
