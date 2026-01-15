@@ -6,9 +6,9 @@ This program simulates an intelligent robot tasked with finding all the markers 
 
 It works by scanning the tiles around it, adding what it sees to its internal memory map. It then moves to the closest unvisited tile in its memory, picking up markers along the way. The robot stops after all reachable tiles have been visited. The robot then moves back to its start position and drops off all the markers it has collected.
 
-## AI Usage Citation
-
-Parts of the `moveToTargetCoord` and `findClosestUnvisited` functions, as well as the entire `queue.c`/`queue.h` implementation, were developed with assistance from an AI (Google Gemini Pro) to implement the Breadth-First Search (BFS) pathfinding algorithm.
+<p align="center">
+  <img src="demo.gif" alt="Simulation Demo" width="500">
+</p>
 
 ## Compile and Run Commands
 
@@ -21,3 +21,9 @@ gcc -o robot_sim main.c graphics.c robot_logic.c drawing_helper.c arena_map.c qu
 ```bash
 ./robot_sim | java -jar drawapp-4.5.jar
 ```
+
+## Credits and Acknowledgments
+
+The simulation is visualized using the DrawApp framework. This includes `drawapp-4.5.jar`, `graphics.c`, and `graphics.h`, which were developed by the UCL Department of Computer Science.
+
+Parts of the `moveToTargetCoord` and `findClosestUnvisited` functions, as well as the entire `queue.c`/`queue.h` implementation, were developed with assistance from an AI (Google Gemini Pro) to implement the Breadth-First Search (BFS) pathfinding algorithm.
